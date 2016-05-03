@@ -9,6 +9,7 @@
         android:layout_height="168dp"
         android:background="?colorPrimary">
 
+        <!--responsible for drawing the title-->
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar_layout"
             android:layout_width="match_parent"
@@ -18,6 +19,7 @@
             app:expandedTitleMarginStart="72dp"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
+            <!--responsible for drawing the icons-->
             <android.support.v7.widget.Toolbar
                 android:id="@+id/app_bar"
                 android:layout_width="match_parent"
