@@ -53,4 +53,4 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 </android.support.design.widget.CoordinatorLayout>
-<!-- From: file:/Users/justinmae/Udacity/Udacity-MaterialDesign/MaterialDesign-Practice/ud862-samples-master/ScrollEventsDemo/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/Users/justinmae/Udacity/Udacity-MaterialDesign/MaterialDesign-Practice/ud862-samples-master/2.19-ScrollEventsDemo/app/src/main/res/layout/activity_main.xml -->
