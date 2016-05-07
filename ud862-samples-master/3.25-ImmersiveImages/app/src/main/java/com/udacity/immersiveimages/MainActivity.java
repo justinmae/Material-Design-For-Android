@@ -15,25 +15,21 @@
  */
 package com.udacity.immersiveimages;
 
-import android.app.Activity;
 import android.content.res.Resources;
+import android.graphics.Matrix;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.GridLayout;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.RadioButton;
-
-import android.graphics.Matrix;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
 
-import static android.widget.ImageView.*;
+import static android.widget.ImageView.ScaleType;
 
 public class MainActivity extends AppCompatActivity {
     @InjectView(R.id.imageView) ImageView imageView;
@@ -48,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
     @InjectView(R.id.fitStartBtn) RadioButton fitStartBtn;
     @InjectView(R.id.fitXYBtn) RadioButton fitXYBtn;
     @InjectView(R.id.matrixBtn) RadioButton matrixBtn;
+    @InjectView(R.id.circularAvatarBtn) RadioButton circularAvatarBtn;
 
     Matrix matrix;
 
@@ -88,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
     public RadioButton getSelectedRadio(View view) {
         RadioButton [] btns = {centerBtn,centerCropBtn,centerInsideBtn,fitCenterBtn,
-          fitEndBtn,fitStartBtn,fitXYBtn,matrixBtn, noneBtn};
+          fitEndBtn,fitStartBtn,fitXYBtn,matrixBtn, circularAvatarBtn, noneBtn};
         for (RadioButton radioButton : btns) {
             if (radioButton.isChecked() && radioButton != view) {
                 return radioButton;
@@ -98,7 +95,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.centerBtn, R.id.centerCropBtn, R.id.centerInsideBtn, R.id.fitCenterBtn,
-        R.id.fitEndBtn, R.id.fitStartBtn, R.id.fitXYBtn, R.id.matrixBtn, R.id.noneBtn})
+        R.id.fitEndBtn, R.id.fitStartBtn, R.id.fitXYBtn, R.id.matrixBtn, R.id.noneBtn,
+        R.id.circularAvatarBtn})
     public void clickRadioButton(RadioButton view) {
         // Check to see what is clicked
         RadioButton checkedRadio = getSelectedRadio(view);
@@ -139,6 +137,15 @@ public class MainActivity extends AppCompatActivity {
                 imageView.setScaleType(ImageView.ScaleType.MATRIX);
                 imageView.setImageMatrix(matrix);
                 break;
+            case "CIRCULAR_AVATAR":
+                //isn't working
+//                RoundedBitmapDrawable drawable = RoundedBitmapDrawableFactory.create(
+//                        getResources(), BitmapFactory.decodeResource(getResources(), R.drawable.photo2)
+//                );
+//                drawable.setCircular(true);
+//                imageView.setImageBitmap(drawable.getBitmap());
+//                break;
+
 
         }
         // If different, alter view

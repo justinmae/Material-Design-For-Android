@@ -133,6 +133,14 @@
                 android:id="@+id/matrixBtn"
                 android:layout_column="2"
                 android:layout_row="4" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CIRCULAR_AVATAR"
+                android:id="@+id/circularAvatarBtn"
+                android:layout_column="2"
+                android:layout_row="5"/>
         </GridLayout>
 </LinearLayout>
     </ScrollView>
