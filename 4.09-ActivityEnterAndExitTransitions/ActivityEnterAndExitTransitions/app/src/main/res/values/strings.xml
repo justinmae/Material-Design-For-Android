@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ActivityEnterAndExitTransitions</string>
+    <string name="sample_text">Represents a group of Animations that should be played together. The transformation of each individual animation are composed together into a single transform. If AnimationSet sets any properties that its children also set (for example, duration or fillBefore), the values of AnimationSet override the child values.
+
+The way that AnimationSet inherits behavior from Animation is important to understand. Some of the Animation attributes applied to AnimationSet affect the AnimationSet itself, some are pushed down to the children, and some are ignored, as follows:
+
+duration, repeatMode, fillBefore, fillAfter: These properties, when set on an AnimationSet object, will be pushed down to all child animations.
+repeatCount, fillEnabled: These properties are ignored for AnimationSet.
+startOffset, shareInterpolator: These properties apply to the AnimationSet itself.
+Starting with ICE_CREAM_SANDWICH, the behavior of these properties is the same in XML resources and at runtime (prior to that release, the values set in XML were ignored for AnimationSet). That is, calling setDuration(500) on an AnimationSet has the same effect as declaring android:duration="500" in an XML resource for an AnimationSet object.</string>
+
+    <string name="transition_grid">transition</string>
+</resources>

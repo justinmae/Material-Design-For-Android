@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_detail_heading"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/grid_item_background"
+        android:text="B"
+        android:textAppearance="@android:style/TextAppearance.Material.Display4"
+        android:transitionName="@string/transition_grid"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_detail_description"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_text"/>
+
+</LinearLayout>
