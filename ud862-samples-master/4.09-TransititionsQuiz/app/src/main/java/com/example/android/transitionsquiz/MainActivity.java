@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 startActivity(new Intent(MainActivity.this, DetailActivity.class),
                         ActivityOptions.makeSceneTransitionAnimation(MainActivity.this
-                                //, view, "hero"
+                                , view, "hero"
                                                                     ).toBundle());
             }
         });
