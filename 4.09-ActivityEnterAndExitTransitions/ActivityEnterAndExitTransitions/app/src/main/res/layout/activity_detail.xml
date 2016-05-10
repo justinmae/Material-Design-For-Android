@@ -8,7 +8,7 @@
         android:id="@+id/text_detail_heading"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/grid_item_background"
+        android:background="@color/colorPrimary"
         android:text="B"
         android:textAppearance="@android:style/TextAppearance.Material.Display4"
         android:transitionName="@string/transition_grid"
