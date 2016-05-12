@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="materialdesign.udacity.com.instructivedesign.MainActivity">
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:src="@drawable/green_planet"
+        android:scaleType="centerCrop"
+        android:id="@+id/image"/>
+    
+    <ScrollView
+        android:id="@+id/scroll_view"
+
+        android:paddingTop="450dp"
+        android:clipToPadding="false"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@android:color/white"
+            android:elevation="8dp"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Material.Display1"
+                android:text="This is the title for the green planet"/>
+
+            <TextView
+                android:paddingTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Material.Body2"
+                android:text="@string/sample_text"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
