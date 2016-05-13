@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Interpolation</string>
+
+    <string-array name="interpolation_names">
+        <item>FastOutLinearInInterpolator</item>
+        <item>FastOutSlowInInterpolator</item>
+        <item>LinearOutSlowInInterpolator</item>
+        <item>----------</item>
+        <item>AccelerateDecelerateInterpolator</item>
+        <item>AccelerateInterpolator</item>
+        <item>AnticipateInterpolator</item>
+        <item>AnticipateOvershootInterpolator</item>
+        <item>BounceInterpolator</item>
+        <item>DecelerateInterpolator</item>
+        <item>LinearInterpolator</item>
+        <item>OvershootInterpolator</item>
+    </string-array>
+</resources>
